@@ -9,4 +9,4 @@ class AudioUtils:
 
     def speak(self, text="Hello World!"):
         response = self.suno(text)
-        return response["audio"]
+        return response
