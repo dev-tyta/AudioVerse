@@ -15,4 +15,5 @@ class AudioUtils:
 
 
 test_audio = AudioUtils()
-output_audio, output_rate = test_audio.speak(text="I'm working on trying out the scripted version of the project to work.")
+output_audio, output_rate = test_audio.speak(
+                                        text="I'm working on trying out the scripted version of the project to work.")
