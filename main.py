@@ -12,9 +12,9 @@ def main():
 
     if text_input is not None:
         if st.button("Speak"):
-            audio_out, sample_rate = audio_utils.speak(text_input)
+            audio_out = audio_utils.speak(text_input)
             audio_bytes = io.BytesIO()
-            scipy.io.wavfile.write(audio_bytes, rate=sample_rate, data=audio_out)
+            scipy.io.wavfile.write(audio_bytes, data=audio_out)
             audio_bytes.seek(0)
 
             st.audio(audio_bytes, format="audio/wav")
