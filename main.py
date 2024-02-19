@@ -2,6 +2,7 @@ import scipy.io.wavfile
 import streamlit as st
 from src.audio_utils import AudioUtils
 import io
+import numpy as np
 
 
 def main():
