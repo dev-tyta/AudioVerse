@@ -14,7 +14,7 @@ def main():
         if st.button("Speak"):
             audio_out = audio_utils.speak(text_input)
             audio_bytes = io.BytesIO()
-            scipy.io.wavfile.write(audio_bytes, data=audio_out)
+            scipy.io.wavfile.write(audio_bytes, data=audio_out, rate=44100)
             audio_bytes.seek(0)
 
             st.audio(audio_bytes, format="audio/wav")

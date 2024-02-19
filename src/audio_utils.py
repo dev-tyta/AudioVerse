@@ -22,9 +22,3 @@ class AudioUtils:
             "inputs": text,
         })
         return response
-
-
-test_audio = AudioUtils()
-output_audio = test_audio.speak(text="I'm working on trying out the scripted version of the project to work.")
-
-print(output_audio)
